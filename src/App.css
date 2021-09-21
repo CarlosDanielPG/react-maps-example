@@ -1,3 +1,20 @@
+@font-face {
+  font-family: "Neue Montreal";
+  src: url("./fonts/NeueMontreal-Regular.woff2") format("woff2"),
+  url("./fonts/NeueMontreal-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Neue Montreal";
+  src: url("./fonts/NeueMontreal-Medium.woff2") format("woff2"),
+  url("./fonts/NeueMontreal-Medium.woff") format("woff");
+  font-weight: bold;
+}
+
+html {
+  font-family: "Neue Montreal" !important;
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +52,105 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.gm-style {
+  font-family: "Neue Montreal";
+}
+
+.gm-style .gm-style-iw-t::after {
+  display: none;
+}
+
+.gm-style .gm-style-iw-c {
+  background: transparent;
+  box-shadow: none;
+  transform: translate3d(-50%,-70%,0);
+}
+
+.gm-style-iw  {
+  cursor: pointer;
+}
+
+.gm-style .gm-style-iw-d::-webkit-scrollbar-track, .gm-style .gm-style-iw-d::-webkit-scrollbar-track-piece {
+  background-color: transparent;
+}
+
+.gm-style-iw-c > button {
+  display: none !important;
+}
+
+.card-info-closed {
+  background-color: white;
+  box-shadow: 0 2px 7px 1px rgb(0 0 0 / 30%);
+  padding: 12px;
+  border-radius: 79px !important;
+  margin: 10px;
+}
+
+.card-info-opened {
+  background-color: white;
+  box-shadow: 0 2px 7px 1px rgb(0 0 0 / 30%);
+  padding: 1px ​12px 12px 12px;
+  border-radius: 20px !important;
+  margin: 10px;
+  text-align: left;
+}
+
+.card-info-container {
+  padding: 1px 20px 20px 20px;
+  width: 345px;
+}
+
+.title {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-right: 10px;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.title-2 {
+  margin-bottom: 0px;
+  margin-right: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: left;
+}
+
+.subtitle {
+  margin-top: 5px;
+  margin-bottom: 0px;
+  margin-right: 10px;
+  font-size: 12px;
+  text-align: left;
+  color: #4D5256;
+}
+
+.dot-div {
+  display: inline-block;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  top: 2px;
+}
+
+.dot:not(:last-child) {
+  margin-right: 5px;
+}
+
+.specialities {
+  margin-top: 20px;
+}
+
+.pill {
+  border-radius: 20px;
+  padding: 5px 10px;
+  margin-right: 5px;
 }
